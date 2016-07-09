@@ -1,114 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Coding & Cocktails Drink Order App</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Coding & Cocktails Drink Order App</title>
 
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<!-- bxSlider CSS file -->
-		<link href="assets/lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- bxSlider CSS file -->
+        <link href="assets/lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
 
-		<script src="assets/lib/jquery-1.12.3.min.js"></script>
-		<script src="assets/scripts/my-scripts.js"></script>
-	</head>
-	<body>
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-default">
-			<div class="container-fluid text-center">
-      			<ul class="nav navbar-nav">
-        			<li><a href="#">Home</a></li>
-        			<li><a href="#menu-section">Menu</a></li>
-        			<li><a href="#about">About</a></li>
-        			<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+        <script src="assets/lib/jquery-1.12.3.min.js"></script>
+        <script src="assets/scripts/my-scripts.js"></script>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid text-center">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-		<!-- HEADER -->
-		<div class="row">
-			<div class="container">
-				<img src="assets/images/cocktails_small.png"></img>
-				<h1 class="text-center">Welcome to Coding &amp; Cocktails!</h1>
-				<h2 class="text-center" id="drink-count">Drinks Ordered: 0</h2>
-				<div class="text-center" id="order-details"></div>
-			</div>
-		</div>
+        <!-- HEADER -->
+        <div class="row">
+            <div class="container">
+                <img src="assets/images/cocktails_small.png"></img>
+                <h1 class="text-center">Welcome to Coding &amp; Cocktails!</h1>
+                <h2 class="text-center" id="drink-count">Drinks Ordered: 0</h2>
+                <div class="text-center" id="order-details"></div>
+            </div>
+        </div>
 
-		<!-- MENU -->
-		<div class="row" id="menu-section">
-			<div id="menu">
-				<div>
-					<h2 class="text-center">Menu</h2>
-					<div class="input-group radio-group">
-						<label class="radio" for="focusedLady">
-						  <input type="radio" id="focusedLady" name="drink" value="Focused Lady">
-						  Focused Lady
-						</label>
-						<label class="radio" for="strongLady">
-						  <input type="radio" id="strongLady" name="drink" value="Strong Lady">
-						  Strong Lady
-						</label>
-						<label class="radio" for="frontEndPunch">
-						  <input type="radio" id="frontEndPunch" name="drink" value="Front-End Punch">
-						  Front-End Punch
-						</label>
-						<label class="radio" for="cachedOut">
-						  <input type="radio" id="cachedOut" name="drink" value="Cached Out">
-						  Cached Out
-						</label>
-						<label class="radio" for="httPapaya">
-						  <input type="radio" id="httPapaya" name="drink" value="httPAPAYA://">
-						  httPAPAYA://
-						</label>
-						<label class="radio" for="nerdyDaiquiri">
-						  <input type="radio" id="nerdyDaiquiri" name="drink" value="Nerdy Daiquiri">
-						  Nerdy Daiquiri
-						</label>
-						<label class="radio" for="theAvernaCode">
-						  <input type="radio" id="theAvernaCode" name="drink" value="The Averna Code">
-						  The Averna Code
-						</label>
-						<label class="radio" for="focusedTheMostest">
-						  <input type="radio" id="focusedTheMostest" name="drink" value="Focused the Mostest">
-						  Focused the Mostest
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- MENU -->
+        <div class="row" id="menu-section">
+            <div id="menu">
+                <div>
+                    <h2 class="text-center">Menu</h2>
+                    <div class="input-group radio-group">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- ATTENDEES -->
-		<div class="row">
-			<div class="container" id="order-form">
-				<label for="order-form-input">Enter your name:</label>
-    			<input type="text" class="form-control" id="order-form-input" placeholder="Ada Lovelace">
-			</div>
-			<!-- BUTTONS -->
-			<button class="btn btn-default center-block btn-order" id="order-btn">Order</button>
-		</div>
+        <!-- ATTENDEES -->
+        <div class="row">
+            <div class="container" id="order-form">
+                <label for="order-form-input">Enter your name:</label>
+                <input type="text" class="form-control" id="order-form-input" placeholder="Ada Lovelace">
+            </div>
+            <!-- BUTTONS -->
+            <button class="btn btn-default center-block btn-order" id="order-btn">Order</button>
+        </div>
 
-		<!-- About -->
-		<div class="row">
-			<div class="container text-center" id="about">
-				<p>Coding &amp; Cocktails is a program designed to help women learn the skills they need to become a front-end developer.  We also enjoy tasty cocktails made by our bartender, Laura Wagner. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat totam, in facilis quod aliquam omnis laudantium harum ratione neque, illo nisi rerum eveniet voluptas quis. Vero corporis nesciunt consequatur iusto.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero incidunt cumque cum minus sint tempore, ea rerum exercitationem porro in. Recusandae dolorum optio iste deserunt sint nesciunt distinctio praesentium, tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, earum commodi itaque, blanditiis accusantium vero ut dolorum, sed ducimus ullam error aliquid minus voluptate maiores neque. Aliquam doloribus, animi quas.</p>
-			</div>
-		</div>
+        <!-- About -->
+        <div class="row">
+            <div class="container text-center" id="about">
+                <p>Coding &amp; Cocktails is a program designed to help women learn the skills they need to become a front-end developer.  We also enjoy tasty cocktails made by our bartender, Laura Wagner. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat totam, in facilis quod aliquam omnis laudantium harum ratione neque, illo nisi rerum eveniet voluptas quis. Vero corporis nesciunt consequatur iusto.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero incidunt cumque cum minus sint tempore, ea rerum exercitationem porro in. Recusandae dolorum optio iste deserunt sint nesciunt distinctio praesentium, tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, earum commodi itaque, blanditiis accusantium vero ut dolorum, sed ducimus ullam error aliquid minus voluptate maiores neque. Aliquam doloribus, animi quas.</p>
+            </div>
+        </div>
 
-		<!-- Contact -->
-		<footer id="contact">
-			<div class="row">
-				<div class="container text-center" id="contact">
-					<p>&copy; 2016 Coding &amp; Cocktails</p>
-					<ul class="list-inline center-block">
-						<li><a href="mailto:codingandcocktails@kcwomenintech.org" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li>
-						<li><a href="https://twitter.com/codecocktailskc" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
-						<li><a href="https://www.facebook.com/codingandcocktailsKC" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</body>
+        <!-- Contact -->
+        <footer id="contact">
+            <div class="row">
+                <div class="container text-center" id="contact">
+                    <p>&copy; 2016 Coding &amp; Cocktails</p>
+                    <ul class="list-inline center-block">
+                        <li><a href="mailto:codingandcocktails@kcwomenintech.org" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li>
+                        <li><a href="https://twitter.com/codecocktailskc" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+                        <li><a href="https://www.facebook.com/codingandcocktailsKC" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
